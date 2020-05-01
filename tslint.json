@@ -1,0 +1,30 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "rules": {
+    "object-literal-sort-keys": false,
+    "no-console": false,
+    "no-empty": [true, "allow-empty-catch"],
+    "no-any": true,
+    "no-arg": true,
+    "no-circular-imports": true,
+    "no-construct": true,
+    "no-eval": true,
+    "no-floating-promises": true,
+    "no-invalid-this": [true, "check-function-in-method"],
+    "no-missing-dollar-expect": true,
+    "no-require-imports": true,
+    "no-string-throw": true,
+    "no-unsafe-finally": true,
+    "no-var-keyword": true,
+    "prefer-const": true,
+    "prefer-readonly": true,
+    "strict-boolean-expressions": true,
+    "strict-type-predicates": true,
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-pascal-case",
+      "allow-leading-underscore"
+    ]
+  }
+}

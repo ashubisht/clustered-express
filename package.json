@@ -1,0 +1,47 @@
+{
+  "name": "clustered-express",
+  "version": "1.0.0",
+  "description": "Express.js in clustered environment",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node --files ./src/index.ts",
+    "startUnforked": "ts-node --files ./src/unforked.ts",
+    "compile": "rimraf ./dist/ && tsc -b ./tsconfig.compile.json",
+    "build": "tsc -b ./tsconfig.compile.json",
+    "rmdist": "rimraf ./dist/",
+    "test": "jest --runInBand --forceExit",
+    "typecheck": "tsc -b",
+    "lint": "cross-env tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "format": "cross-env prettier --write 'src/**/*.{ts,tsx}'",
+    "format:check": "cross-env prettier --check 'src/**/*.{ts,tsx}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashubisht/clustered-express.git"
+  },
+  "author": "ashubisht",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashubisht/clustered-express/issues"
+  },
+  "homepage": "https://github.com/ashubisht/clustered-express#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/sinon": "^9.0.0",
+    "@types/supertest": "^2.0.8",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "sinon": "^9.0.2",
+    "supertest": "^4.0.2",
+    "ts-jest": "^25.4.0",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
+  }
+}
